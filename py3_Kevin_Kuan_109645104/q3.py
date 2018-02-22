@@ -20,12 +20,3 @@ for i in articles:
 	src=(i.find(class_="src").get_text())
 	date=(i.find(class_="date").get_text())
 	f.write(name+","+src+","+date+"\n")
-	# print(i.get_text())
-# for i in articles:
-# 	print(i.get_text(),)
-# print(soup.find_all(class_="src"))
-# print(soup.find_all(class_="date"))
-
-# print(len(ar))
-
-#<span class="name"> title of article
