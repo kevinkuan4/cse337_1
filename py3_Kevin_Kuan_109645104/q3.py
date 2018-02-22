@@ -11,4 +11,21 @@ site_url = "https://finance.google.com/finance/market_news"
 r = urllib.request.urlopen(site_url).read()
 
 soup = BeautifulSoup(r, "html.parser")
-print(soup.prettify())
+
+articles = soup.find_all(class_="g-section news sfe-break-bottom-16")
+
+for i in articles:
+	name=(i.find(class_="name").get_text()).strip("\n")
+
+	src=(i.find(class_="src").get_text())
+	date=(i.find(class_="date").get_text())
+	f.write(name+","+src+","+date+"\n")
+	# print(i.get_text())
+# for i in articles:
+# 	print(i.get_text(),)
+# print(soup.find_all(class_="src"))
+# print(soup.find_all(class_="date"))
+
+# print(len(ar))
+
+#<span class="name"> title of article
