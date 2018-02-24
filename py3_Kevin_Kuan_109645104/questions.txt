@@ -1,0 +1,8 @@
+Question 4:
+-Clarification on part 1 and part 2 inputs
+-returns (and prints)?
+-All lower case?
+-Take out punctuation?
+-websites (www.gutenbuerg.org)
+-how to sepearate?
+	- word,1,blue,3

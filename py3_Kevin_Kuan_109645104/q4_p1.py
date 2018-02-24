@@ -2,30 +2,31 @@
 # Kevin Kuan
 # 109645104
 
-def check_file():
+
+def file_parse():
 	filename = input("Enter the filename: ")
 	try:
-	    f = open(filename)
+	    f = open(filename,"r")
 	except FileNotFoundError:
 	    print("ERROR:", filename,"does not exist!")
 	    print("Exiting program...")
 	    exit()
-
-	file_parse(f)
-
-def file_parse(file):
 	my_dict = {}
-	for line in file:
+	for line in f:
 		new_line=line.split()
-		print(new_line)
-		if str(new_line) in my_dict:
-			my_dict[str(new_line)]+=1
-		else:
-			my_dict[str(new_line)]=1
+		for word in new_line:
+			
+			# punct = "?:!,.;)(\'\""
+			
+			# Removes punctations before and after the words
+			# print(word.lower().rstrip(punct).lstrip(punct))
+			if str(word) in my_dict:
+				my_dict[str(word)]+=1
+			else:
+				my_dict[str(word)]=1
 
 	return my_dict
 
 
 if __name__ == "__main__":
-	check_file()
-
+	my_dict = file_parse()
