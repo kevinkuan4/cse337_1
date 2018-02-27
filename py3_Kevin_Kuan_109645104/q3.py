@@ -20,3 +20,5 @@ for i in articles:
 	src=(i.find(class_="src").get_text())
 	date=(i.find(class_="date").get_text())
 	f.write(name+","+src+","+date+"\n")
+
+f.close()

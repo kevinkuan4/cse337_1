@@ -3,6 +3,5 @@ import q5_p1
 strong_passwd =  False
 
 while strong_passwd == False:
-	if password_checker(input("Enter a password: ")):
-		print("Password is good!")
+	if q5_p1.password_checker(input("Enter a password: ")):
 		strong_passwd = True
