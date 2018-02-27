@@ -30,3 +30,4 @@ def file_parse():
 
 if __name__ == "__main__":
 	my_dict = file_parse()
+	# print(my_dict)
