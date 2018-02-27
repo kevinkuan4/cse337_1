@@ -49,7 +49,6 @@ def password_checker(passwd):
 
 # (password_checker("ab12Aa!23"))
 # (password_checker("a121ab32s"))
-# (password_checker("d2rqi2a5pbK!"))
 # (password_checker("0123aa!@#"))
 # (password_checker("absdada!!23"))
 # (password_checker("33aszx#!"))
