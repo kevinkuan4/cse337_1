@@ -1,3 +1,7 @@
+# CSE337
+# Kevin Kuan
+# 109645104
+
 import re
 def password_checker(passwd):
 	#(?=.{8,})(?=.*[a-zA-z])(?=.*[0-9])(?=.*\W)

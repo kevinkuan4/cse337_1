@@ -1,3 +1,7 @@
+# CSE337
+# Kevin Kuan
+# 109645104
+
 import q5_p1
 
 strong_passwd =  False
