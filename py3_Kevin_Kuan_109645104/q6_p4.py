@@ -8,7 +8,7 @@ def count_pattern(str, pattern, replace_str):
 	result=""
 	for i in pattern:
 		ord_pattern+=(ord(pattern[0])-ord(i))
-	print(ord_pattern)
+	# print(ord_pattern)
 
 	# for i in range(len(str)-(len(pattern)-1)):
 	i= 0
@@ -41,14 +41,14 @@ def count_pattern(str, pattern, replace_str):
 
 
 if __name__ == '__main__':
-	print("orig string shihfdddedaaba")
-	print("new string",count_pattern("shihfdddedaaba","xyx","123"))
+	print("orig string: shihfdddedaaba")
+	print("new string:",count_pattern("shihfdddedaaba","xyx","123"))
 	print("-----------------------------------")
 	print("orig string cdcesa")
-	print("new string",count_pattern("cdcesa","xyx","123"))
+	print("new string:",count_pattern("cdcesa","xyx","123"))
 	print("-----------------------------------")
 	print("orig string bacjedf")
-	print("new string",count_pattern("bacjedf","bac","213"))
+	print("new string:",count_pattern("bacjedf","bac","213"))
 	print("-----------------------------------")
 	print("orig string adbadsdgjh")
-	print("new string",count_pattern("adbadsdgjh","adb","142"))
+	print("new string:",count_pattern("adbadsdgjh","adb","142"))
